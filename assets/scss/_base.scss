@@ -1,8 +1,21 @@
+body {
+    margin: 0;
+}
+
 p {
     @include ralewayRegular();
     color: $darkGray;
     font-size: 16px;
     line-height: 22px;
+}
+
+h1 {
+    @include ralewayRegular();
+    color: $green;
+    font-size: 48px;
+    line-height: 56px;
+    margin: 0 0 26px 0;
+    text-transform: uppercase;
 }
 
 .primary-btn {
