@@ -7,9 +7,18 @@
 // Base
 @import 'base';
 
+// Aos
+@import url('/assets/css/aos.min.css');
+
+// Slick
+@import url('slick/slick-theme.min.css');
+@import url('slick/slick.min.css');
+
 // Components
 @import 'components/header';
 @import 'components/footer';
 @import 'components/intro-banner';
 @import 'components/info-item';
 @import 'components/cta-item';
+@import 'components/content-container';
+@import 'components/meet-our-team';
