@@ -36,4 +36,11 @@ $(document).ready(function () {
         ]
     });
 
+    // Show submit message
+    $('.contact-form-submit-container').hide();
+    $('.contact-form-inner-container .primary-btn').on('click', function() {
+        $('.contact-form-inner-container').fadeOut('slow');
+        $('.contact-form-submit-container').fadeIn('slow');
+    });
+
 });

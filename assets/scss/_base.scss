@@ -73,6 +73,8 @@ h2 {
     -moz-osx-font-smoothing: grayscale;
     border-color: $blue;
     position: relative;
+    text-decoration: none;
+    z-index: 9;
     &:hover {
         background-color: $white;
         color: $blue;
@@ -87,11 +89,10 @@ h2 {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 99%;
         height: 100%;
         border: 2px solid $blue;
-        z-index: -1;
-        border-radius: 3px;
+        border-radius: 4px;
         opacity: 0;
         -webkit-transform: scale3d(0.6, 0.6, 1);
         transform: scale3d(0.6, 0.6, 1);
