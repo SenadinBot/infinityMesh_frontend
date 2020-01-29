@@ -43,4 +43,69 @@ $(document).ready(function () {
         $('.contact-form-submit-container').fadeIn('slow');
     });
 
+    // Open/Close Mobile Menu
+    $('.nav-icon').on('click', function () {
+        $('body').toggleClass('menu-open');
+        $('.menu-item-side').removeClass('second-level');
+        $('.sub-menu').removeClass('first-level');
+    })
+
+    $('.phone-container').on('click', function () {
+        $('.menu-item-side').removeClass('second-level');
+        $('.sub-menu').removeClass('first-level');
+        $('body').removeClass('menu-open');
+    })
+
+    // Open/Close Mobile Submenu 
+    if ($(window).width() < 992) {
+        $('.sub-menu > .mobile-arrow').on('click', function (e) {
+            $(this).parents('.sub-menu').toggleClass('first-level').siblings().removeClass('first-level');
+            $('.menu-item-side').removeClass('second-level');
+        });
+        $('.menu-item-side .mobile-arrow').on('click', function (e) {
+            $(this).parents('.menu-items-content-item').siblings().children().removeClass('second-level');
+            $(this).parents('.menu-item-side').toggleClass("second-level").siblings().removeClass('second-level');
+        });
+    }
+
+    // Adding Class on Scroll
+    $(window).on('load', function () {
+        var winOffset = document.documentElement.scrollTop || document.body.scrollTop;
+        if (winOffset > 55) {
+            $('body').addClass('nav-fixed');
+        }
+    });
+    $(window).scroll(function () {
+        var winOffset = document.documentElement.scrollTop || document.body.scrollTop;
+        if (winOffset > 55) {
+            $('body').addClass('nav-fixed');
+        } else {
+            $('body').removeClass('nav-fixed');
+        }
+    });
+
+    // Tablet Header Menu
+    if ($(window).width() > 992 && $(window).width() < 1199) {
+        $(document).on('touchstart click', function (e) {
+            $('.sub-menu').removeClass("active-hover");
+        });
+        $('.sub-menu').on('touchstart click', function (e) {
+            console.log('test');
+            event.stopPropagation();
+        })
+        $('.sub-menu > a').on('touchstart click', function (e) {
+            if (e.type == "touchstart") {
+                if (!$(this).parent().hasClass("active-hover")) {
+                    e.preventDefault();
+                }
+                $(this).parent().toggleClass("active-hover").siblings().removeClass('active-hover');
+                if ($(".sub-menu").hasClass("active-hover")) {
+                    $(this).removeClass("active-hover");
+                }
+                event.stopPropagation();
+            } else if (e.type == "click") {
+            }
+        });
+    };
+
 });
