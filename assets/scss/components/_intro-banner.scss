@@ -17,7 +17,7 @@
             margin: 0 auto 80px auto;
         }
         @include media-xs-portrait {
-            width: 100%;
+            width: 85%;
         }
         @include media-sm {
             width: 95%;
@@ -51,6 +51,11 @@
         &.left-position {
             background-position: left;
         }
-        
+        @include media-xs {
+            border: none;
+        }
+        @include media-sm {
+            border: none;
+        }
     }
 }

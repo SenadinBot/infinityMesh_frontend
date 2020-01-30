@@ -38,7 +38,7 @@ $(document).ready(function () {
 
     // Show submit message
     $('.contact-form-submit-container').hide();
-    $('.contact-form-inner-container .primary-btn').on('click', function() {
+    $('.contact-form-inner-container .primary-btn').on('click', function () {
         $('.contact-form-inner-container').fadeOut('slow');
         $('.contact-form-submit-container').fadeIn('slow');
     });
@@ -50,39 +50,12 @@ $(document).ready(function () {
         $('.sub-menu').removeClass('first-level');
     })
 
-    $('.phone-container').on('click', function () {
-        $('.menu-item-side').removeClass('second-level');
-        $('.sub-menu').removeClass('first-level');
-        $('body').removeClass('menu-open');
-    })
-
     // Open/Close Mobile Submenu 
     if ($(window).width() < 992) {
         $('.sub-menu > .mobile-arrow').on('click', function (e) {
             $(this).parents('.sub-menu').toggleClass('first-level').siblings().removeClass('first-level');
-            $('.menu-item-side').removeClass('second-level');
-        });
-        $('.menu-item-side .mobile-arrow').on('click', function (e) {
-            $(this).parents('.menu-items-content-item').siblings().children().removeClass('second-level');
-            $(this).parents('.menu-item-side').toggleClass("second-level").siblings().removeClass('second-level');
         });
     }
-
-    // Adding Class on Scroll
-    $(window).on('load', function () {
-        var winOffset = document.documentElement.scrollTop || document.body.scrollTop;
-        if (winOffset > 55) {
-            $('body').addClass('nav-fixed');
-        }
-    });
-    $(window).scroll(function () {
-        var winOffset = document.documentElement.scrollTop || document.body.scrollTop;
-        if (winOffset > 55) {
-            $('body').addClass('nav-fixed');
-        } else {
-            $('body').removeClass('nav-fixed');
-        }
-    });
 
     // Tablet Header Menu
     if ($(window).width() > 992 && $(window).width() < 1199) {
@@ -107,5 +80,22 @@ $(document).ready(function () {
             }
         });
     };
+
+    // Adding Class on Scroll
+    $(window).on('load', function () {
+        var winOffset = document.documentElement.scrollTop || document.body.scrollTop;
+        if (winOffset > 55) {
+            $('body').addClass('nav-fixed');
+        }
+    });
+    $(window).scroll(function () {
+        var winOffset = document.documentElement.scrollTop || document.body.scrollTop;
+        if (winOffset > 55) {
+            $('body').addClass('nav-fixed');
+        } else {
+            $('body').removeClass('nav-fixed');
+        }
+    });
+
 
 });
