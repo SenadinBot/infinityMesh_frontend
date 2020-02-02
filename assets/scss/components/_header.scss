@@ -321,7 +321,12 @@ header {
                         > ul {
                             -webkit-animation-name: showSubMenu;
                             -webkit-animation-duration: .4s;
-                            display: block;
+                            @include media-lg {
+                                display: block;
+                            }
+                            @include media-md {
+                                display: block;
+                            }
                         }
                     }
                     &.active-hover {

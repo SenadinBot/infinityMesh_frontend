@@ -446,8 +446,13 @@ header {
           display: block; }
         header nav > ul > li.sub-menu:hover > ul {
           -webkit-animation-name: showSubMenu;
-          -webkit-animation-duration: .4s;
-          display: block; }
+          -webkit-animation-duration: .4s; }
+          @media (min-width: 1200px) {
+            header nav > ul > li.sub-menu:hover > ul {
+              display: block; } }
+          @media (min-width: 992px) and (max-width: 1199px) {
+            header nav > ul > li.sub-menu:hover > ul {
+              display: block; } }
         header nav > ul > li.sub-menu.active-hover > ul {
           -webkit-animation-name: showSubMenu;
           -webkit-animation-duration: .4s;
