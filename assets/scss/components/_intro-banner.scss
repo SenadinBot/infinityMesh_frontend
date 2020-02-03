@@ -6,30 +6,48 @@
         .banner-img {
             height: 631px;
         }
+        .banner-content {
+            margin-top: 190px;
+        }
+        p {
+            margin: 0 auto 110px auto;
+            @include media-xs {
+                margin: 0 auto 80px auto;
+            }
+            @include media-xs-portrait {
+                width: 85%;
+            }
+            @include media-sm {
+                margin: 0 auto 80px auto;
+            }
+            @include media-md {
+                margin: 0 auto 100px auto;
+            }
+        }
     }
     p {
         @include ralewayLight();
         color: $white;
         width: 75%;
-        margin: 0 auto 120px auto;
+        margin: 0 auto 78px auto;
         @include media-xs {
             width: 80%;
-            margin: 0 auto 80px auto;
+            // margin: 0 auto 80px auto;
         }
         @include media-xs-portrait {
             width: 85%;
         }
         @include media-sm {
             width: 95%;
-            margin: 0 auto 80px auto;
+            // margin: 0 auto 80px auto;
         }
         @include media-md {
             width: 90%;
-            margin: 0 auto 100px auto;
+            // margin: 0 auto 100px auto;
         }
     }
     .banner-content {
-        margin-top: 190px;
+        margin-top: 145px;
         z-index: 91;
         position: relative;
     }
