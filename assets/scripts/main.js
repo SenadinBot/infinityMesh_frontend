@@ -108,6 +108,9 @@ $(document).ready(function () {
             $(".accordion-content").slideUp('slow');
             $(this).siblings(".accordion-content").slideDown('slow');
         }
+        $('html, body').animate({
+            scrollTop: $(".accordion-item > a").offset().top - ($(window).height() - $(this).outerHeight()) / 2
+        }, 500);
     });
 
 });

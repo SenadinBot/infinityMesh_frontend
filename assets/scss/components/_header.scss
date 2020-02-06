@@ -1,17 +1,17 @@
 body {
     &.nav-fixed {
         header {
-            padding: 10px 30px 40px 30px;
+            padding: 10px 0 40px 0;
             background: #002f53;
             z-index: 990;
             @include media-md {
-                padding: 10px 30px 40px 30px;
+                padding: 10px 0 40px 0;
             }
             @include media-xs {
                 padding: 15px 0 38px 0;
             }
             @include media-sm {
-                padding: 15px 30px 68px 30px;
+                padding: 15px 0 68px 0;
             }
             &:after {
                 display: none;
@@ -68,7 +68,7 @@ body {
     }
 }
 header {
-    padding: 50px 30px 20px 30px;
+    padding: 50px 0 20px 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -81,10 +81,10 @@ header {
         padding: 15px 0 38px 0;
     }
     @include media-sm {
-        padding: 15px 30px 68px 30px;
+        padding: 15px 0 68px 0;
     }
     @include media-md {
-        padding: 30px 30px 20px 30px;
+        padding: 30px 0 20px 0;
     }
     .container {
         @include media-lg {
@@ -124,7 +124,7 @@ header {
         height: 53px;
         position: absolute;
         top: 0;
-        left: 0;
+        left: 15px;
         z-index: 1;
         @include media-xs {
             width: 90px;
