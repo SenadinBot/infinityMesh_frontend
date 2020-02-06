@@ -97,4 +97,17 @@ $(document).ready(function () {
         }
     });
 
+    // Blog Custom Accordion
+    $(".accordion-item > a").on("click", function () {
+        if ($(this).hasClass("active")) {
+            $(this).removeClass("active");
+            $(this).siblings(".accordion-content").slideUp('slow');
+        } else {
+            $(".accordion-item > a").removeClass("active");
+            $(this).addClass("active");
+            $(".accordion-content").slideUp('slow');
+            $(this).siblings(".accordion-content").slideDown('slow');
+        }
+    });
+
 });

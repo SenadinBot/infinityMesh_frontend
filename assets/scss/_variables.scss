@@ -7,7 +7,7 @@ $green: #83C71B;
 $purple: #A459F0;
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,400i,600,600i,700,700i,800,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,600,600i,700,700i,800,900,900i&display=swap');
 @mixin ralewayLight() {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
@@ -19,10 +19,15 @@ $purple: #A459F0;
   font-weight: 400;
 }
 @mixin ralewayItalic() {
-    font-family: 'Raleway', sans-serif;
-    font-style: italic;
-    font-weight: 400;
-  }
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+@mixin ralewayMedium() {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
 @mixin ralewaySemiBold() {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
