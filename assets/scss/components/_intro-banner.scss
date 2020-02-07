@@ -25,6 +25,9 @@
             }
         }
     }
+    &.banner-carousel {
+        height: 700px;
+    }
     p {
         @include ralewayLight();
         color: $white;

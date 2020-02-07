@@ -64,6 +64,14 @@ h2 {
         bottom: 0;
         left: 0;
     }
+    span {
+        &.blue {
+            color: $blue;
+        }
+        &.green {
+            color: $green;
+        }
+    }
 }
 
 h5 {

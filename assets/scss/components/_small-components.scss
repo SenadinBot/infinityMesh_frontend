@@ -1,0 +1,154 @@
+.why-choose-container {
+    margin-bottom: 90px;
+    h2 {
+        color: $darkGray;
+        text-align: center;
+        font-size: 40px;
+        line-height: 65px;
+        margin-bottom: 30px;
+        padding-bottom: 0;
+        &:after {
+            display: none;
+        }
+        @include media-xs {
+            font-size: 32px;
+            line-height: 44px;
+        }
+    }
+    .col-12 {
+        &:last-child {
+            a {
+                margin-bottom: 0;
+            }
+        }
+    }
+    a {
+        background: $white;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+        display: block;
+        min-height: 127px;
+        padding: 0 30px;
+        position: relative;
+        text-decoration: none;
+        transition: box-shadow .3s ease-out,transform .3s ease-out,opacity .2s ease-out;
+        transition-delay: .1s;
+        @include media-md {
+            padding: 0 20px;
+            min-height: 100px;
+        }
+        @include media-sm {
+            padding: 0 15px;
+        }
+        @include media-xs-landscape {
+            padding: 0 15px;
+        }
+        @include media-xs-portrait {
+            margin-bottom: 30px;
+        }
+        &:hover {
+            transform: translateY(-5px);
+            -webkit-box-shadow: 0 2px 2px rgba(45, 45, 45, 0.05), 0 4px 4px rgba(49, 49, 49, 0.05), 0 8px 8px rgba(42, 42, 42, 0.05), 0 16px 16px rgba(32, 32, 32, 0.05), 0 32px 32px rgba(49, 49, 49, 0.05), 0 64px 64px rgba(35, 35, 35, 0.05);
+            box-shadow: 0 2px 2px rgba(45, 45, 45, 0.05), 0 4px 4px rgba(49, 49, 49, 0.05), 0 8px 8px rgba(42, 42, 42, 0.05), 0 16px 16px rgba(32, 32, 32, 0.05), 0 32px 32px rgba(49, 49, 49, 0.05), 0 64px 64px rgba(35, 35, 35, 0.05);
+            span {
+                border-bottom: 1px solid #717171;
+                -webkit-transition: all .5s;
+                -moz-transition: all .5s;
+                transition: all .5s;
+                @include media-sm {
+                    border-bottom: none;
+                }
+                @include media-xs {
+                    border-bottom: none;
+                }
+            }
+        }
+        .why-choose-item {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 30px;
+            @include media-sm {
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+            }
+            @include media-xs-landscape {
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+            }
+        }
+        .img-container {
+            display: inline-block;
+            margin-right: 12px;
+            vertical-align: middle;
+            @include media-md {
+                width: 20%;
+                margin-right: 10px;
+            }
+            @include media-sm {
+                width: 20%;
+                display: block;
+                margin: 0  auto;
+            }
+            @include media-xs-landscape {
+                width: 20%;
+                display: block;
+                margin: 0  auto;
+            }
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+        .why-choose-content {
+            display: inline-block;
+            vertical-align: middle;
+            width: calc(100% - 120px);
+            @include media-md {
+                width: calc(100% - 90px);
+            }
+            @include media-sm {
+                width: calc(100% - 30px);
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+            }
+            @include media-xs-portrait {
+                width: calc(100% - 145px);
+            }
+            @include media-xs-landscape {
+                width: calc(100% - 30px);
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+        span {
+            @include ralewayRegular();
+            font-size: 16px;
+            line-height: 22px;
+            color: #717171;
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            transition: all .5s;
+            border-bottom: 1px solid transparent;
+            @include media-md {
+                font-size: 14px;
+                line-height: 20px;
+            }
+            @include media-sm {
+                font-size: 14px;
+                line-height: 20px;
+                display: block;
+            }
+            @include media-xs {
+                font-size: 14px;
+                line-height: 20px;
+            }
+            b {
+                @include ralewayBoldItalic();
+            }
+        }
+    }
+}
