@@ -39,11 +39,19 @@ h1 {
     font-size: 48px;
     line-height: 56px;
     margin: 0 0 26px 0;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     @include media-xs {
         font-size: 24px;
         line-height: 29px;
         @include ralewaySemiBold();
+    }
+    span {
+        &.blue {
+            color: $blue;
+        }
+        &.green {
+            color: $green;
+        }
     }
 }
 

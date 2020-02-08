@@ -113,4 +113,46 @@ $(document).ready(function () {
         }, 500);
     });
 
+    // Homepage Banner Carousel
+    $('.banner-carousel-container').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        speed: 1500,
+        dots: false,
+        arrows: false,
+        infinite: true,
+        pauseOnHover: true
+    });
+
+    // Homepage Info Carousel
+    $('.info-carousel').slick({
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        speed: 1500,
+        dots: false,
+        arrows: true,
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 9999,
+                settings: "unslick"
+            }, {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 2,
+                }
+            }, {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 4,
+                }
+            }
+        ]
+    })
+
+
 });

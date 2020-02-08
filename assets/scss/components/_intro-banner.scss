@@ -27,6 +27,44 @@
     }
     &.banner-carousel {
         height: 700px;
+        margin-bottom: 90px;
+        position: relative;
+        @include media-xs {
+            margin-bottom: 50px;
+        }
+        p {
+            margin: 0 auto 40px auto;
+        }
+        h1 {
+            color: $white;
+            margin: 0 auto 30px auto;
+            display: block;
+        }
+        .banner-content {
+            margin-top: 175px;
+        }
+        .banner-img {
+            height: 100%;
+        }
+        .banner-slide {
+            height: 100%;
+            position: relative;
+        }
+        .slick-list,
+        .slick-track,
+        .banner-carousel-container {
+            height: 100%;
+        }
+    }
+    .primary-btn {
+        min-width: 162px;
+        display: inline-block;
+        &:before {
+            width: 100%;
+        }
+        &:focus {
+            outline: none;
+        }
     }
     p {
         @include ralewayLight();
@@ -77,6 +115,89 @@
         }
         @include media-sm {
             border: none;
+        }
+        &.left-position {
+            background-position: left;
+        }
+        &.right-position {
+            background-position: right;
+        }
+    }
+}
+.info-carousel {
+    position: absolute;
+    left: 50%;
+    bottom: 48px;
+    transform: translateX(-50%);
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    a {
+        text-align: center;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        flex: 1 1 0%;
+        width: auto;
+        text-decoration: none;
+        transition: box-shadow .3s ease-out,transform .3s ease-out,opacity .2s ease-out;
+        transition-delay: .1s;
+        .img-container {
+            display: block;
+            margin-bottom: 24px;
+            height: 50px;
+            @include media-md {
+                height: 40px;
+            }
+            @include media-sm {
+                height: 30px;
+            }
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+                margin: 0 auto;
+            }
+        }
+        span {
+            display: inline;
+            color: $white;
+            font-size: 15px;
+            line-height: 22px;
+            @include ralewayLight();
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            transition: all .5s;
+            border-bottom: 1px solid transparent;
+            @include media-md {
+                font-size: 12px;
+                line-height: 18px;
+            }
+            @include media-sm {
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+        &:hover {
+            transform: translateY(-5px);
+            -webkit-box-shadow: 0 2px 2px rgba(45, 45, 45, 0.05), 0 4px 4px rgba(49, 49, 49, 0.05), 0 8px 8px rgba(42, 42, 42, 0.05), 0 16px 16px rgba(32, 32, 32, 0.05), 0 32px 32px rgba(49, 49, 49, 0.05), 0 64px 64px rgba(35, 35, 35, 0.05);
+            box-shadow: 0 2px 2px rgba(45, 45, 45, 0.05), 0 4px 4px rgba(49, 49, 49, 0.05), 0 8px 8px rgba(42, 42, 42, 0.05), 0 16px 16px rgba(32, 32, 32, 0.05), 0 32px 32px rgba(49, 49, 49, 0.05), 0 64px 64px rgba(35, 35, 35, 0.05);
+            span {
+                border-bottom: 1px solid $white;
+                -webkit-transition: all .5s;
+                -moz-transition: all .5s;
+                transition: all .5s;
+                @include media-sm {
+                    border-bottom: none;
+                }
+                @include media-xs {
+                    border-bottom: none;
+                }
+            }
         }
     }
 }

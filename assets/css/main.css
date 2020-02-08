@@ -49,8 +49,7 @@ h1 {
   color: #83C71B;
   font-size: 48px;
   line-height: 56px;
-  margin: 0 0 26px 0;
-  text-transform: uppercase; }
+  margin: 0 0 26px 0; }
   @media (max-width: 767px) {
     h1 {
       font-size: 24px;
@@ -58,6 +57,10 @@ h1 {
       font-family: 'Raleway', sans-serif;
       font-style: normal;
       font-weight: 600; } }
+  h1 span.blue {
+    color: #1976D2; }
+  h1 span.green {
+    color: #83C71B; }
 
 h2 {
   font-family: 'Raleway', sans-serif;
@@ -974,7 +977,36 @@ footer {
       .big-banner-container.big-banner p {
         margin: 0 auto 100px auto; } }
   .big-banner-container.banner-carousel {
-    height: 700px; }
+    height: 700px;
+    margin-bottom: 90px;
+    position: relative; }
+    @media (max-width: 767px) {
+      .big-banner-container.banner-carousel {
+        margin-bottom: 50px; } }
+    .big-banner-container.banner-carousel p {
+      margin: 0 auto 40px auto; }
+    .big-banner-container.banner-carousel h1 {
+      color: #ffffff;
+      margin: 0 auto 30px auto;
+      display: block; }
+    .big-banner-container.banner-carousel .banner-content {
+      margin-top: 175px; }
+    .big-banner-container.banner-carousel .banner-img {
+      height: 100%; }
+    .big-banner-container.banner-carousel .banner-slide {
+      height: 100%;
+      position: relative; }
+    .big-banner-container.banner-carousel .slick-list,
+    .big-banner-container.banner-carousel .slick-track,
+    .big-banner-container.banner-carousel .banner-carousel-container {
+      height: 100%; }
+  .big-banner-container .primary-btn {
+    min-width: 162px;
+    display: inline-block; }
+    .big-banner-container .primary-btn:before {
+      width: 100%; }
+    .big-banner-container .primary-btn:focus {
+      outline: none; }
   .big-banner-container p {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -1020,6 +1052,83 @@ footer {
     @media (min-width: 768px) and (max-width: 991px) {
       .big-banner-container .banner-img {
         border: none; } }
+    .big-banner-container .banner-img.left-position {
+      background-position: left; }
+    .big-banner-container .banner-img.right-position {
+      background-position: right; }
+
+.info-carousel {
+  position: absolute;
+  left: 50%;
+  bottom: 48px;
+  transform: translateX(-50%);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%; }
+  .info-carousel a {
+    text-align: center;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1 1 0%;
+    width: auto;
+    text-decoration: none;
+    transition: box-shadow .3s ease-out,transform .3s ease-out,opacity .2s ease-out;
+    transition-delay: .1s; }
+    .info-carousel a .img-container {
+      display: block;
+      margin-bottom: 24px;
+      height: 50px; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .info-carousel a .img-container {
+          height: 40px; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .info-carousel a .img-container {
+          height: 30px; } }
+      .info-carousel a .img-container img {
+        max-width: 100%;
+        max-height: 100%;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0 auto; }
+    .info-carousel a span {
+      display: inline;
+      color: #ffffff;
+      font-size: 15px;
+      line-height: 22px;
+      font-family: 'Raleway', sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      -webkit-transition: all .5s;
+      -moz-transition: all .5s;
+      transition: all .5s;
+      border-bottom: 1px solid transparent; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .info-carousel a span {
+          font-size: 12px;
+          line-height: 18px; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .info-carousel a span {
+          font-size: 12px;
+          line-height: 16px; } }
+    .info-carousel a:hover {
+      transform: translateY(-5px);
+      -webkit-box-shadow: 0 2px 2px rgba(45, 45, 45, 0.05), 0 4px 4px rgba(49, 49, 49, 0.05), 0 8px 8px rgba(42, 42, 42, 0.05), 0 16px 16px rgba(32, 32, 32, 0.05), 0 32px 32px rgba(49, 49, 49, 0.05), 0 64px 64px rgba(35, 35, 35, 0.05);
+      box-shadow: 0 2px 2px rgba(45, 45, 45, 0.05), 0 4px 4px rgba(49, 49, 49, 0.05), 0 8px 8px rgba(42, 42, 42, 0.05), 0 16px 16px rgba(32, 32, 32, 0.05), 0 32px 32px rgba(49, 49, 49, 0.05), 0 64px 64px rgba(35, 35, 35, 0.05); }
+      .info-carousel a:hover span {
+        border-bottom: 1px solid #ffffff;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        transition: all .5s; }
+        @media (min-width: 768px) and (max-width: 991px) {
+          .info-carousel a:hover span {
+            border-bottom: none; } }
+        @media (max-width: 767px) {
+          .info-carousel a:hover span {
+            border-bottom: none; } }
 
 .info-item {
   text-align: center;
