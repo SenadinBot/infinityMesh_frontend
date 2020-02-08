@@ -10,13 +10,10 @@
 // Aos
 @import url('/assets/css/aos.min.css');
 
-// Slick
-@import url('slick/slick-theme.min.css');
-@import url('slick/slick.min.css');
-
 // Components
 @import 'components/header';
 @import 'components/footer';
+@import 'components/slick';
 @import 'components/form-style';
 @import 'components/intro-banner';
 @import 'components/info-item';

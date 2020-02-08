@@ -144,6 +144,11 @@
         text-decoration: none;
         transition: box-shadow .3s ease-out,transform .3s ease-out,opacity .2s ease-out;
         transition-delay: .1s;
+        outline: none;
+        &:focus, 
+        &:hover {
+            outline: none;
+        }
         .img-container {
             display: block;
             margin-bottom: 24px;

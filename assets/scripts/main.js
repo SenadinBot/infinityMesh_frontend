@@ -127,32 +127,34 @@ $(document).ready(function () {
     });
 
     // Homepage Info Carousel
-    $('.info-carousel').slick({
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        autoplay: true,
-        autoplaySpeed: 4000,
-        speed: 1500,
-        dots: false,
-        arrows: true,
-        infinite: false,
-        responsive: [
-            {
-                breakpoint: 9999,
-                settings: "unslick"
-            }, {
-                breakpoint: 576,
-                settings: {
-                    slidesToShow: 2,
+    if ($(window).width() < 767) {
+        $('.info-carousel').slick({
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            speed: 1500,
+            dots: false,
+            arrows: true,
+            infinite: false,
+            responsive: [
+                {
+                    breakpoint: 9999,
+                    settings: "unslick"
+                }, {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                }, {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 4,
+                    }
                 }
-            }, {
-                breakpoint: 767,
-                settings: {
-                    slidesToShow: 4,
-                }
-            }
-        ]
-    })
+            ]
+        });
+    }
 
 
 });
