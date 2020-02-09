@@ -145,7 +145,7 @@ h5 {
   margin-bottom: 50px; }
 
 .medium-spacing {
-  margin-bottom: 100px; }
+  margin-bottom: 90px; }
   @media (max-width: 767px) {
     .medium-spacing {
       margin-bottom: 50px; } }
@@ -1381,14 +1381,13 @@ footer {
     display: block;
     margin-bottom: 20px; }
   .info-item p {
-    font-family: 'Raleway', sans-serif;
-    font-style: italic;
-    font-weight: 600;
     width: 80%;
     margin: 0 auto; }
     @media (min-width: 768px) and (max-width: 991px) {
       .info-item p {
         width: 90%; } }
+    .info-item p i b {
+      font-style: italic; }
   .info-item .img-container {
     border-radius: 100%;
     width: 126px;
@@ -1411,6 +1410,50 @@ footer {
       transform: translate(-50%, -50%);
       max-width: 100%;
       max-height: 100%; }
+
+.info-item-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%; }
+  .info-item-container .info-item {
+    position: relative;
+    z-index: 9;
+    text-align: center;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1 1 0%;
+    width: auto;
+    padding: 0 30px;
+    margin-bottom: 0; }
+    @media (max-width: 767px) {
+      .info-item-container .info-item {
+        margin-bottom: 50px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .info-item-container .info-item {
+        margin-bottom: 50px; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .info-item-container .info-item {
+        margin-bottom: 50px; } }
+    @media (min-width: 1199px) and (max-width: 1440px) {
+      .info-item-container .info-item {
+        padding: 0 15px; } }
+    @media (max-width: 767px) {
+      .info-item-container .info-item:last-child {
+        margin-bottom: 0; } }
+    .info-item-container .info-item p {
+      width: 70%; }
+      @media (min-width: 1199px) and (max-width: 1440px) {
+        .info-item-container .info-item p {
+          width: 75%; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .info-item-container .info-item p {
+          width: 100%; } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .info-item-container .info-item p {
+          width: 90%; } }
 
 .cta-item {
   background-color: #ffffff;
@@ -2833,5 +2876,43 @@ h2.team-title {
       @media (min-width: 768px) and (max-width: 991px) {
         .service-steps-container .steps-item p {
           width: 100%; } }
+
+.responsive-table {
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+  margin-top: 40px; }
+  @media (max-width: 767px) {
+    .responsive-table {
+      border: 0; } }
+  .responsive-table tr {
+    width: calc(100% / 3);
+    display: table-cell;
+    vertical-align: top;
+    margin-right: 30px; }
+  .responsive-table td,
+  .responsive-table th {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #454545;
+    font-size: 18px;
+    line-height: 23px;
+    padding: 26px 42px 22px 43px;
+    display: block; }
+    @media (max-width: 767px) {
+      .responsive-table td,
+      .responsive-table th {
+        width: 100%;
+        display: table; } }
+  .responsive-table td {
+    background-color: #ffffff;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05); }
+  .responsive-table th {
+    background-color: #1976D2;
+    color: #ffffff; }
 
 /*# sourceMappingURL=main.css.map */
