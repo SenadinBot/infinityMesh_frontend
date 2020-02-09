@@ -168,18 +168,22 @@
     }
     @include media-xs {
         margin-top: 30px;
+        overflow: hidden;
     }
     .slick-track {
         @include media-xs {
             display: flex !important;
-        }
-        @include media-xs-landscape {
-            margin: 0 -15px;
+            overflow: hidden;
         }
     }
     .slick-slide {
         @include media-xs-landscape {
             margin: 0 15px;
+        }
+    }
+    .slick-list {
+        @include media-xs-landscape {
+            margin: 0 -15px;
         }
     }
     .steps-item {

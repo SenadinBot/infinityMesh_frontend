@@ -136,7 +136,7 @@ $(document).ready(function () {
             speed: 1500,
             dots: false,
             arrows: false,
-            infinite: false,
+            infinite: true,
             responsive: [
                 {
                     breakpoint: 9999,
@@ -166,7 +166,7 @@ $(document).ready(function () {
             speed: 1500,
             dots: false,
             arrows: false,
-            infinite: false,
+            infinite: true,
             responsive: [
                 {
                     breakpoint: 9999,
