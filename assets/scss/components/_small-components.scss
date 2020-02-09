@@ -152,3 +152,97 @@
         }
     }
 }
+
+.service-steps-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 50px;
+    @include media-md {
+        margin-top: 20px;
+    }
+    @include media-sm {
+        margin-top: 10px;
+    }
+    @include media-xs {
+        margin-top: 30px;
+    }
+    .slick-track {
+        @include media-xs {
+            display: flex !important;
+        }
+        @include media-xs-landscape {
+            margin: 0 -15px;
+        }
+    }
+    .slick-slide {
+        @include media-xs-landscape {
+            margin: 0 15px;
+        }
+    }
+    .steps-item {
+        background-color: $white;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+        text-align: center;
+        padding: 65px 47px 38px 47px;
+        text-decoration: none;
+        display: block;
+        position: relative;
+        z-index: 9;
+        text-align: center;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        flex: 1 1 0%;
+        width: auto;
+        margin-right: 30px;
+        &:focus {
+            outline: none;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        @include media-md {
+            margin-top: 30px;
+        }
+        @include media-sm {
+            margin-top: 30px;
+        }
+        @include media-xs {
+            margin-right: 0;
+            height: auto;
+        }
+        span {
+            @include ralewaySemiBold();
+            color: $darkGray;
+            font-size: 23px;
+            line-height: 26px;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 20px;
+        }
+        .img-container {
+            margin-bottom: 30px;
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                margin: 0 auto;
+            }
+        }
+        p {
+            width: 89%;
+            margin: 0 auto;
+            @media (min-width: 1199px) and (max-width: 1440px) {
+                width: 100%;
+            }
+            @include media-md {
+                width: 100%;
+            }
+            @include media-sm {
+                width: 100%;
+            }
+        }
+    }
+}

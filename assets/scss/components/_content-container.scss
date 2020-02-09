@@ -1,12 +1,9 @@
 .content-container {
     background: $white;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
-    padding: 105px 84px 125px 84px;
+    padding: 70px 75px;
     z-index: 9;
     position: relative;
-    @include media-md {
-        padding: 75px 54px 95px 54px;
-    }
     @include media-sm {
         padding: 55px 44px 75px 44px;
     }
@@ -63,8 +60,19 @@
         }
         h2 {
             margin-top: -8px;
+            padding-bottom: 20px;
+            text-align: left;
             @include media-xs {
                 margin-top: 8px;
+            }
+            &:after {
+                content: "";
+                height: 3px;
+                width: 173px;
+                background: $green;
+                position: absolute;
+                bottom: 0;
+                left: 0;
             }
         }
         p {
@@ -88,6 +96,42 @@
         }
         .img-container { 
             margin-right: 0;
+        }
+    }
+}
+.custom-container {
+    .content-container {
+        .img-container {
+            width: 509px;
+            margin-right: 64px;  
+            @include media-md {
+                margin-right: 51px;  
+                width: 50%;
+            }
+            @include media-sm {
+                margin-right: 41px; 
+                width: 40%;
+            }
+            @include media-xs {
+                margin-right: 0;  
+                width: 100%;
+            } 
+        }
+        .content-inner-container {
+            width: calc(100% - 585px);
+            margin-top: 35px;
+            @include media-md {
+                width: calc(50% - 58px);
+                margin-top: 15px;
+            }
+            @include media-sm {
+                width: calc(60% - 58px);
+                margin-top: 0;
+            }
+            @include media-xs {
+                width: 100%;
+                margin-top: 0;
+            }
         }
     }
 }

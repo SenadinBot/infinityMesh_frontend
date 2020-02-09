@@ -57,21 +57,12 @@ h1 {
 
 h2 {
     @include ralewaySemiBold();
-    color: $blue;
+    color: $darkGray;
     font-size: 35px;
     line-height: 41px;
     margin: 0 0 25px 0;
     position: relative;
-    padding-bottom: 20px;
-    &:after {
-        content: "";
-        height: 3px;
-        width: 173px;
-        background: $blue;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-    }
+    text-align: center;
     span {
         &.blue {
             color: $blue;
@@ -79,6 +70,10 @@ h2 {
         &.green {
             color: $green;
         }
+    }
+    @include media-xs {
+        font-size: 30px;
+        line-height: 38px;
     }
 }
 
@@ -181,4 +176,18 @@ h5 {
     @include media-xs {
         margin-bottom: 50px;
     }
+}
+
+.custom-container {
+    .container {
+        @include media-lg {
+            max-width: 1640px;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+}
+
+.add-top-spacing {
+    margin-top: 218px;
 }

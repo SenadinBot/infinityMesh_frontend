@@ -699,6 +699,8 @@
         h2 {
             position: relative;
             color: $darkGray;
+            text-align: left;
+            padding-bottom: 20px;
             &:after {
                 content: "";
                 background: $green;

@@ -135,7 +135,7 @@ $(document).ready(function () {
             autoplaySpeed: 4000,
             speed: 1500,
             dots: false,
-            arrows: true,
+            arrows: false,
             infinite: false,
             responsive: [
                 {
@@ -150,6 +150,37 @@ $(document).ready(function () {
                     breakpoint: 767,
                     settings: {
                         slidesToShow: 4,
+                    }
+                }
+            ]
+        });
+    }
+
+    // Software Testing Info Carousel
+    if ($(window).width() < 767) {
+        $('.service-steps-container').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            speed: 1500,
+            dots: false,
+            arrows: false,
+            infinite: false,
+            responsive: [
+                {
+                    breakpoint: 9999,
+                    settings: "unslick"
+                }, {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }, {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
                     }
                 }
             ]
