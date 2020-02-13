@@ -74,6 +74,10 @@ h2 {
     @include media-xs {
         font-size: 30px;
         line-height: 38px;
+        margin: 0 0 25px 0;
+    }
+    @include media-sm {
+        margin-bottom: 30px;
     }
 }
 
@@ -145,7 +149,7 @@ h5 {
 }
 
 .small-spacing {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 .medium-spacing {
