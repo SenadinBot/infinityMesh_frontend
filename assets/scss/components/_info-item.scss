@@ -96,6 +96,37 @@
             }
         }
     }
+    &.two-info-item {
+        @include media-mlg {
+            .info-item {
+                flex: 1 1 50%;
+                text-align: left;
+                margin-bottom: 90px;
+                .img-container {
+                    display: inline-block;
+                    margin-right: 11px;
+                    vertical-align: top;
+                    margin-bottom: 0;
+                }
+                .info-item-content {
+                    display: inline-block;
+                    vertical-align: top;
+                    text-align: left;
+                    width: calc(100% - 145px);
+                    margin-top: 5px;
+                    p {
+                        text-align: left;
+                        width: 100%;
+                    }
+                    span {
+                        text-transform: uppercase;
+                        @include ralewaySemiBold();
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
 }
 .custom-container {
     .info-item-container {
@@ -106,10 +137,12 @@
 }
 .info-item-intro-container {
     text-align: center;
+    margin-bottom: 50px;
     h2 {
-        margin-bottom: 20px;
+        margin-bottom: 0;
     }
     p {
-        margin-bottom: 50px;
+        margin-top: 20px;
+        margin-bottom: 8px;
     }
 }

@@ -97,6 +97,12 @@ $purple: #A459F0;
       @content;
     }
 }
+// Medium Devices, Tablet landscape .visible-md-*
+@mixin media-mlg {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
 // Large Devices, Desktop .visible-lg-* 
 @mixin media-lg {
     @media (min-width: 1200px) {

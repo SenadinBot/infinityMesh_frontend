@@ -411,3 +411,123 @@
         margin-bottom: 40px;
     }
 }
+
+.rte-container {
+    .img-container {
+        text-align: center;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    h2 {
+        padding-bottom: 13px;
+        text-align: left;
+        margin-bottom: 20px;
+        margin-top: 25px;
+        @include media-xs {
+            margin-top: 0;
+        }
+        &:after {
+            content: "";
+            height: 3px;
+            width: 173px;
+            background: $green;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    p {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    [class^="col-"] {
+        &:first-child {
+            @include media-xs {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+.custom-pagination {
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-size: 0;
+        li {
+            display: inline-block;
+            @include ralewaySemiBold();
+            color: #717171;
+            font-size: 12px;
+            line-height: 26px;
+            position: relative;
+            a {
+                text-decoration: none;
+                @include ralewaySemiBold();
+                color: #717171;
+                font-size: 12px;
+                line-height: 26px;
+                padding: 0 7px;
+                position: relative;
+                -webkit-transition: all 0.2s ease;
+                -moz-transition: all 0.2s ease;
+                -o-transition: all 0.2s ease;
+                transition: all 0.2s ease;
+                @include media-xs-portrait {
+                    padding: 0 5px;
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    bottom: -4px;
+                    left: 0;
+                    visibility: hidden;
+                    -webkit-transform: scaleX(0);
+                    -moz-transform: scaleX(0);
+                    -ms-transform: scaleX(0);
+                    -o-transform: scaleX(0);
+                    transform: scaleX(0);
+                    -webkit-transition: all 0.3s ease-in-out 0s;
+                    -moz-transition: all 0.3s ease-in-out 0s;
+                    -ms-transition: all 0.3s ease-in-out 0s;
+                    -o-transition: all 0.3s ease-in-out 0s;
+                    transition: all 0.3s ease-in-out 0s;
+                    background: $blue;
+                }
+                &:hover {
+                    color: $blue;
+                    &:after { 
+                        visibility: visible;
+                        -webkit-transform: scaleX(1);
+                        -moz-transform: scaleX(1);
+                        -ms-transform: scaleX(1);
+                        -o-transform: scaleX(1);
+                        transform: scaleX(1);
+                    }
+                }
+            }
+            &.active {
+                a {
+                    color: $blue;
+                    &:after { 
+                        visibility: visible;
+                        -webkit-transform: scaleX(1);
+                        -moz-transform: scaleX(1);
+                        -ms-transform: scaleX(1);
+                        -o-transform: scaleX(1);
+                        transform: scaleX(1);
+                    }
+                }
+            }
+        }
+    }
+}
