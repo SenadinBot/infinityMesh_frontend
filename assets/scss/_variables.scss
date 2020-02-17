@@ -68,6 +68,32 @@ $purple: #A459F0;
   font-style: italic;
   font-weight: 900;
 }
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,700i&display=swap');
+@mixin merriweatherLight() {
+  font-family: 'Merriweather', serif;
+  font-style: normal;
+  font-weight: 300;
+}
+@mixin merriweatherRegular() {
+  font-family: 'Merriweather', serif;
+  font-style: normal;
+  font-weight: 400;
+}
+@mixin merriweatherItalic() {
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-weight: 400;
+}
+@mixin merriweatherBold() {
+  font-family: 'Merriweather', serif;
+  font-style: normal;
+  font-weight: 700;
+}
+@mixin merriweatherBoldItalic() {
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-weight: 700;
+}
 // Media Queries
 // Extra Small Devices, Mobile .visible-xs-*
 @mixin media-xs {

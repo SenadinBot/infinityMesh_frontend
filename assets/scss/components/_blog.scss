@@ -564,11 +564,18 @@
             p {
                 line-height: 26px;
                 margin-bottom: 25px;
+                @include merriweatherRegular();
+                i {
+                    @include merriweatherItalic();
+                }
+                b {
+                    @include merriweatherBold();
+                }
             }
         }
         p {
             mark {
-                @include ralewayMediumItalic();
+                @include merriweatherItalic();
             }
         }
         mark {
@@ -692,6 +699,7 @@
         display: block;
         padding: 15px 25px 23px 25px;
         p {
+            @include merriweatherRegular();
             font-size: 12px;
             line-height: 18px;
             margin-bottom: 17px;
