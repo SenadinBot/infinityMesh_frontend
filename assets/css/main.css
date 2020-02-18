@@ -181,6 +181,23 @@ h5 {
     max-width: 1640px;
     margin: 0 auto;
     display: block; } }
+.custom-container.add-blue-bg {
+  background-color: #022E4F;
+  position: relative; }
+  .custom-container.add-blue-bg:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #022E4F;
+    opacity: 0.78;
+    z-index: 2; }
+  .custom-container.add-blue-bg h2 {
+    color: #ffffff; }
+  .custom-container.add-blue-bg p {
+    color: #ffffff; }
 
 .add-top-spacing {
   margin-top: 218px; }
@@ -1441,7 +1458,8 @@ footer {
         margin-bottom: 50px; } }
     @media (min-width: 992px) and (max-width: 1199px) {
       .info-item-container .info-item {
-        margin-bottom: 50px; } }
+        margin-bottom: 50px;
+        padding: 0 15px; } }
     @media (min-width: 1199px) and (max-width: 1440px) {
       .info-item-container .info-item {
         padding: 0 15px; } }
@@ -1496,6 +1514,15 @@ footer {
   .info-item-intro-container p {
     margin-top: 20px;
     margin-bottom: 8px; }
+
+.add-blue-bg .info-item span {
+  color: #ffffff; }
+.add-blue-bg .info-item-intro-container {
+  position: relative;
+  z-index: 9;
+  margin-top: 108px; }
+.add-blue-bg .info-item-container {
+  margin-bottom: 40px; }
 
 .cta-item {
   background-color: #ffffff;
@@ -2869,11 +2896,16 @@ h2.team-title {
   @media (min-width: 1200px) {
     .service-steps-container.more-rows .steps-item {
       flex: 1 1 17%; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .service-steps-container.more-rows .steps-item:nth-child(5n) {
+      margin-right: 30px; }
+      .service-steps-container.more-rows .steps-item:nth-child(5n):last-child {
+        margin-right: 0; } }
   .service-steps-container .steps-item {
     background-color: #ffffff;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
     text-align: center;
-    padding: 65px 47px 38px 47px;
+    padding: 65px 30px 38px 30px;
     text-decoration: none;
     display: block;
     position: relative;
@@ -3219,5 +3251,16 @@ h2.team-title {
       margin-bottom: 20px; }
       .our-advantages-item ul li:last-child {
         margin-bottom: 0; }
+
+.full-width-hiring-process {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%; }
 
 /*# sourceMappingURL=main.css.map */

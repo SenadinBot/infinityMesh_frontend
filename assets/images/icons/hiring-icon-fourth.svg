@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="126" height="126" viewBox="0 0 126 126">
+  <g id="Group_254" data-name="Group 254" transform="translate(-1211 -1800)">
+    <g id="Ellipse_15" data-name="Ellipse 15" transform="translate(1211 1800)" fill="rgba(249,249,249,0.22)" stroke="#f9f9f9" stroke-width="3">
+      <circle cx="63" cy="63" r="63" stroke="none"/>
+      <circle cx="63" cy="63" r="61.5" fill="none"/>
+    </g>
+    <g id="attach_money-24px_1_" data-name="attach_money-24px (1)" transform="translate(1243 1832)">
+      <path id="Path_265" data-name="Path 265" d="M0,0H61.159V61.159H0Z" fill="none"/>
+      <path id="Path_266" data-name="Path 266" d="M20.285,23.132c-5.785-1.5-7.645-3.058-7.645-5.479,0-2.778,2.574-4.714,6.88-4.714,4.536,0,6.218,2.166,6.371,5.351h5.632a10.158,10.158,0,0,0-8.18-9.709V3H15.7V8.5c-4.944,1.07-8.919,4.281-8.919,9.2,0,5.887,4.867,8.817,11.977,10.524C25.126,29.757,26.4,32,26.4,34.37c0,1.758-1.249,4.561-6.88,4.561-5.249,0-7.314-2.344-7.594-5.351H6.32c.306,5.581,4.485,8.715,9.378,9.76v5.53h7.645V43.391c4.969-.943,8.919-3.822,8.919-9.046C32.262,27.107,26.069,24.635,20.285,23.132Z" transform="translate(9.785 4.645)" fill="#efefef"/>
+    </g>
+  </g>
+</svg>

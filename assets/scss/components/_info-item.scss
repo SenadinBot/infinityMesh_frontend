@@ -76,6 +76,7 @@
         }
         @include media-md {
             margin-bottom: 50px;
+            padding: 0 15px;
         }
         @media (min-width: 1199px) and (max-width: 1440px) {
             padding: 0 15px;
@@ -144,5 +145,20 @@
     p {
         margin-top: 20px;
         margin-bottom: 8px;
+    }
+}
+.add-blue-bg {
+    .info-item {
+        span {
+            color: $white;
+        }
+    }
+    .info-item-intro-container {
+        position: relative;
+        z-index: 9;
+        margin-top: 108px;
+    }
+    .info-item-container {
+        margin-bottom: 40px;
     }
 }
