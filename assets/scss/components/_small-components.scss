@@ -381,6 +381,22 @@
                 margin-bottom: 20px;
             }
         }
+        p {
+            margin-bottom: 40px;
+            margin-top: -18px;
+            @include media-md {
+                margin-bottom: 30px;
+                margin-top: -5px;
+            }
+            @include media-sm {
+                margin-bottom: 20px;
+                margin-top: 0;
+            }
+            @include media-xs {
+                margin-bottom: 20px;
+                margin-top: 0;
+            }
+        }
     }
     &.add-blue-bg {
         background-color: #022E4F;
@@ -391,6 +407,13 @@
             p {
                 color: $white;
             }
+        }
+    }
+    .container {
+        @include media-lg {
+            max-width: 1640px;
+            margin: 0 auto;
+            display: block;
         }
     }
 }
