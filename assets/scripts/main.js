@@ -208,4 +208,16 @@ $(document).ready(function () {
             });
         });
     }
+
+    // What they said about us carousel
+    $('.what-they-said-carousel').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 4000,
+        speed: 1500,
+        dots: false,
+        arrows: true,
+        infinite: true
+    });
 });
