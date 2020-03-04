@@ -135,3 +135,9 @@ $purple: #A459F0;
       @content;
     }
 }
+// Extra Large Devices, Desktop .visible-lg-* 
+@mixin media-xlg {
+  @media (min-width: 1441px) {
+    @content;
+  }
+}

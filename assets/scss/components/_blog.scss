@@ -672,6 +672,7 @@
         @include media-sm {
             width: 100%;
             margin-right: 0;
+            height: auto;
         }
         img {
             width: 100%;
@@ -786,5 +787,43 @@
                 width: calc(100% - 67px);
             }
         }
+    }
+}
+
+.feature-post-container {
+    position: relative;
+    padding-top: 80px;
+    @include media-sm {
+        padding-top: 50px;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 360px;
+        background-color: #022E4F;
+        @include media-sm {
+            height: 280px;
+        }
+    }
+    .full-width-feature-post-img {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        width: 100%;
+        height: 360px;
+        @include media-sm {
+            height: 280px;
+        }
+    }
+    h2 {
+        color: $white;
+        margin-bottom: 49px;
     }
 }
